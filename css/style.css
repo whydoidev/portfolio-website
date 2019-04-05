@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans:600');
+
+body {
+  background-color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/image_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.big-title {
+  position: absolute;
+  transform: translateY(-50%);
+  top: -200px;
+  font-size: 9vmin;
+  letter-spacing: 10px;
+  transition: font-size 1s, opacity 0.4s, top 2s;
+  font-family: 'Arvo', serif;
+}
+
+h2, h3 {
+  font-size: 5vmin;
+  letter-spacing: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Arvo', serif;
+}
+
+h2 {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 12vmin;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav {
+  position: absolute;
+  top: 60%;
+}
+
+nav a {
+  padding: 30px 30px 30px 0px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+main {
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+  margin-left: 50%;
+  z-index: 100;
+  width: 50%;
+}
+
+section.project {
+  text-align: center;
+  margin: 300px 0px;
+}
+
+.hidden-text {
+  position: absolute;
+  bottom: -600px;
+  transition: bottom 2s;
+}
+
+.logo {
+  position: absolute;
+  margin-right: 50%;
+  margin-left: 50%;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  padding: 10px;
+}
+
+small {
+  color: white;
+  display: block;
+  margin-top: 15px;
+}
