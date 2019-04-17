@@ -1,98 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:400,700');
 
 body {
-  background-color: #222222;
-  font-family: 'Open Sans', sans-serif;
-  background-image: url(../images/image_1.jpg);
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url(../images/background.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-color: #F7F6F1;
 }
 
-section.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  padding: 5%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.big-title {
-  position: absolute;
-  transform: translateY(-50%);
-  top: -200px;
-  font-size: 9vmin;
-  letter-spacing: 10px;
-  transition: font-size 1s, opacity 0.4s, top 2s;
-  font-family: 'Arvo', serif;
+/* ///////////////////////////////////////////////////////////////// */
+/* HEADING STYLES */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 104px;
+  color: #313639;
+  ;
 }
 
 h2, h3 {
+  /* Vmin adjust the font size according to page size */
   font-size: 5vmin;
   letter-spacing: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  font-family: 'Arvo', serif;
+  color: #313639;
+  ;
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-  padding: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
 }
 
-h3 {
+h4 {
   font-size: 12vmin;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
+.info {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* NAVIGATION STYLES */
+nav {
+  position: absolute;
+  transition: bottom 2s;
+}
+
+/* ALL LINK STYLES */
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
-nav {
-  position: absolute;
-  top: 60%;
-}
-
+/* NAV LINKS */
 nav a {
   padding: 30px 30px 30px 0px;
   font-size: 20px;
 }
 
 nav a:hover {
-  color: white;
+  color: orange;
 }
 
-main {
-  margin-top: 100vh;
-  margin-bottom: 100vh;
-  margin-left: 50%;
-  z-index: 100;
-  width: 50%;
+.margin-bottom {
+  margin-bottom: 15px;
 }
 
-section.project {
-  text-align: center;
-  margin: 300px 0px;
+.info {
+  margin-bottom: 104px;
 }
 
-.hidden-text {
-  position: absolute;
-  bottom: -600px;
-  transition: bottom 2s;
-}
-
-.logo {
-  position: absolute;
-  margin-right: 50%;
-  margin-left: 50%;
-  text-align: center;
-}
-
+/* FOOTER */
 footer {
   padding: 20px;
   text-align: center;
@@ -104,7 +95,173 @@ footer a {
 }
 
 small {
-  color: white;
+  color: #313639;
   display: block;
   margin-top: 15px;
 }
+
+/* SOCIAL MEDIA LOGO link styles */
+.logo {
+  position: absolute;
+  margin-right: 50%;
+  margin-left: 50%;
+  text-align: center;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* INDEX PAGE STYLES */
+.subheading {
+  padding: 0;
+  text-align: left;
+}
+
+/* This controls the fixed left-hand section */
+section.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90vh;
+  padding: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Scrollable content on the right-hand section  */
+main {
+  margin-top: 30vh;
+  margin-bottom: 100vh;
+  margin-left: 50%;
+  z-index: 100;
+  width: 50%;
+}
+
+/* Turn the project images opacity down */
+.project img {
+  opacity: 0.8;
+}
+
+/* Slide in title styles */
+.big-title {
+  position: absolute;
+  transform: translateY(-50%);
+  top: -200px;
+  font-size: 9vmin;
+  letter-spacing: 10px;
+  transition: font-size 1s, opacity 0.4s, top 2s;
+  font-family: 'Arvo', serif;
+}
+
+/* Spacing & alignment for projects */
+section.project {
+  text-align: left;
+  margin-bottom: 300px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.subheading {
+  margin-bottom: 60px;
+}
+
+/* adjusts the viewpoint height beneth the  intro */
+.intro {
+  margin-bottom: 45vh;
+}
+
+/* Text that appears from the bottom  */
+.hidden-text {
+  position: absolute;
+  bottom: -600px;
+  transition: bottom 2s;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* CONTACT & PROJECT PAGES */
+/* Fixed nav styles */
+.fixed-nav {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 50px;
+  left: 50%;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* PROJECT PAGE STYLES */
+/* Individual project styles */
+.granular img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  opacity: 0.8;
+}
+
+/* Project page header style */
+.pageheader {
+  position: fixed;
+  top: 0;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* CONTACT PAGE STYLES */
+/* margin 0 auto allows the element to be pushed into the middle of the screen */
+.contact-content {
+  margin-top: 200px;
+}
+
+.contact-image img {
+  width: 400px;
+}
+
+.contact-image video {
+  width: 100%;
+}
+
+.contact-content .row {
+  margin-top: 20px;
+}
+
+/* FORM STYLES */
+label {
+  display: block;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: black;
+}
+
+input[type="email"], input[type="text"], textarea {
+  width: 100%;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  outline-color: orange;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input [type="submit"] {
+  background-color: orange;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about-me {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */

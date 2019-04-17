@@ -6,6 +6,7 @@
   <meta name="description" content="CJ Jones Web Design Portfolio" />
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
   <!-- Stylesheets -->
   <!-- This removes browser styles -->
   <link rel="stylesheet" href="css/reset.css" />
@@ -13,42 +14,117 @@
 </head>
 
 <body>
-
   <section class="fixed">
     <a href="index.html" class="big-title">
-      <h1>Web By CJ</h1>
+      <h1>CJ Jones</h1>
     </a>
     <nav>
       <a href="about.html">About Me</a>
-      <a href="projects.html">My Projects</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="blog.html">Blog</a>
     </nav>
-
     <div class="hidden-text">
-      <h3>Connect With Me</h3>
+      <h4>Connect With Me</h4>
     </div>
   </section>
 
   <main>
+    <section class="intro">
+      <h2>London Based Web Developer working with HTML, CSS & Javascript</h2>
+      <p class="info">
+        Enthusiastic about working on new projects and building online representation for businesses.
+      </p>
+    </section>
+
+    <h2 class="subheading">Featured Projects</h2>
     <section class="project">
-      <img src="http://placeimg.com/540/380/tech" alt="placeholder" />
-      <h2>Project 1</h2>
-      <p>Learning about html & css</p>
+
+      <a href=" https://whydoidev.github.io/granular/" target="_blank">
+        <!-- <img class="margin-bottom" src="images/granular_1.png" alt="placeholder" /> -->
+        <video autoplay muted="muted" width="675" height="400" loop>
+          <source src="videos/granular-vid.mp4" type="video/mp4">
+        </video>
+      </a>
+      <div class="project-writeup">
+        <h2>Granular</h2>
+        <p>
+          Built with HTML & CSS
+          <br />
+          In this project we mix a blend of high quality imagery and CSS to create a seamless scroll effect between all of the content.
+          We also have a mailchimp subscribe button linked to a mailing list attached.
+        </p>
+      </div>
+
     </section>
 
     <section class="project">
-      <img src="http://placeimg.com/540/380/tech" alt="placeholder" />
-      <h2>Project 2</h2>
-      <p>Learning about html & css</p>
+      <a href="https://whydoidev.github.io/munch/" target="_blank">
+        <video autoplay muted="muted" width="675" height="400" loop>
+          <source src="videos/munch-video.mp4" type="video/mp4">
+        </video>
+      </a>
+      <h2>Munch</h2>
+      <p>
+        Built with HTML & CSS
+        <br />
+        A currated food blog with high quality images and an embeded video. Post authors are also included in a centralised design format. Contact page features an embeded google map and a contact text box.
+      </p>
     </section>
 
     <section class="project">
-      <img src="http://placeimg.com/540/380/tech" alt="placeholder" />
-      <h2>Project 3</h2>
-      <p>Learning about html & css</p>
+      <a href="https://whydoidev.github.io/Last-Studio/" target="_blank">
+        <video autoplay muted="muted" width="675" height="400" loop>
+          <source src="videos/last-studio.mp4" type="video/mp4">
+        </video>
+      </a>
+      <h2>Last Studio</h2>
+      <p>Built with HTML, CSS & Javascript.
+        <br />
+        In this project we mix a blend of high qulaity imagery and CSS to create a seamless colour change scroll effect between all of the content.
+        We also have a mailchimp subscribe button linked to a mailing list attached.
+      </p>
     </section>
-
     <section class="project">
+
+      <a href="https://wellby-demo.myshopify.com/" target="_blank">
+        <!-- <img class="margin-bottom" src="images/granular_1.png" alt="placeholder" /> -->
+        <video autoplay muted="muted" width="675" height="400" loop>
+          <source src="videos/wellby-vid.mp4" type="video/mp4">
+        </video>
+      </a>
+      <div class="project-writeup">
+        <h2>Wellby Online Store</h2>
+        <p>
+          Online store with Shopify CMS.
+          <br />
+          Wellby is a lifestyle shop selling a limited assortment of products handmade in their Silver Lake, Los Angeles studio.
+          This website was designed to showcase their products by having a minimalist approach with high quality imagery, which focuses on drawing the customers attention on their products.
+          Wellby are able to manage the content on the website through the extensive shopify CMS (content management system) allowing them to manage their stock and upload new products.
+        </p>
+      </div>
+
+    </section>
+    <section class="contact-form">
+
+      <form id="invisible-recaptcha-form">
+        ...
+        <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline">Submit</button>
+      </form>
+
+
+      <form accept-charset="UTF-8" action="https://usebasin.com/f/8514033a8e44" enctype="multipart/form-data" method="POST">
+        <label for="email-address">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <textarea rows="4" cols="50" name="comment" required>
+  </textarea>
+
+        <input type="hidden" id="gotcha" name="_gotcha">
+
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <!-- <section class="project">
       <img src="http://placeimg.com/540/380/tech" alt="placeholder" />
       <h2>Project 4</h2>
       <p>Learning about html & css</p>
@@ -58,7 +134,7 @@
       <img src="http://placeimg.com/540/380/tech" alt="placeholder" />
       <h2>Project 5</h2>
       <p>Learning about html & css</p>
-    </section>
+    </section> -->
 
   </main>
   <footer>
@@ -76,8 +152,15 @@
       &copy; CJ Jones 2019, All Rights Reserved
     </small>
   </footer>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+  <script>
+    function onSubmit(token) {
+      document.getElementById("invisible-recaptcha-form").submit();
+    }
+  </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
