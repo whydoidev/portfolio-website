@@ -16,7 +16,6 @@ h1 {
   font-weight: 700;
   font-size: 104px;
   color: #313639;
-  ;
 }
 
 h2, h3 {
@@ -129,8 +128,8 @@ section.fixed {
 
 /* Scrollable content on the right-hand section  */
 main {
-  margin-top: 30vh;
-  margin-bottom: 100vh;
+  margin-top: 35vh;
+  margin-bottom: 30vh;
   margin-left: 50%;
   z-index: 100;
   width: 50%;
@@ -149,7 +148,7 @@ main {
   font-size: 9vmin;
   letter-spacing: 10px;
   transition: font-size 1s, opacity 0.4s, top 2s;
-  font-family: 'Arvo', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Spacing & alignment for projects */
@@ -157,7 +156,12 @@ section.project {
   text-align: left;
   margin-bottom: 300px;
   margin-top: 30px;
+  margin-right: 50px;
   line-height: 1.5;
+}
+
+div.project-writeup {
+  margin-top: 20px;
 }
 
 .subheading {
@@ -174,6 +178,12 @@ section.project {
   position: absolute;
   bottom: -600px;
   transition: bottom 2s;
+}
+
+/* Video styles */
+video {
+  width: 100%;
+  height: auto;
 }
 
 /* ////////////////////////////////////////////////////////////////////// */
@@ -229,7 +239,7 @@ video {
 /* FORM STYLES */
 label {
   display: block;
-  font-family: "Arvo", serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   color: black;
@@ -240,7 +250,7 @@ input[type="email"], input[type="text"], textarea {
   border: 1px solid #b2b2b2;
   border-radius: 4px;
   padding: 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   outline-color: orange;
 }
@@ -254,7 +264,7 @@ input [type="submit"] {
   background-color: orange;
   padding: 10px 30px;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -264,4 +274,85 @@ input [type="submit"] {
   text-align: center;
 }
 
+h4.mobile-text {
+  display: none;
+}
+
 /* ////////////////////////////////////////////////////////////////////// */
+/* Media queries */
+@media screen and (max-width: 1380px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  main {
+    margin-left: 49%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    text-align: center;
+  }
+
+  section.fixed {
+    height: auto;
+    position: static;
+    width: 100%;
+    display: block;
+  }
+
+  /* Scrollable content on the right-hand section  */
+  main {
+    margin-top: 50px;
+    margin-bottom: 30vh;
+    margin-left: 0px;
+    z-index: 100;
+    width: 100%;
+    padding: 30px;
+  }
+
+  section.intro {
+    margin-bottom: 100px;
+  }
+
+  nav {
+    position: static;
+    margin-top: 20px;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .subheading {
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Slide in title styles */
+  .big-title {
+    position: static;
+    transition: none;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  h4.mobile-text {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  section.project {
+    margin-bottom: 300px;
+    text-align: center;
+    margin-right: 0px;
+  }
+}

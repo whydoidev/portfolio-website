@@ -40,7 +40,7 @@
 
       <a href=" https://whydoidev.github.io/granular/" target="_blank">
         <!-- <img class="margin-bottom" src="images/granular_1.png" alt="placeholder" /> -->
-        <video autoplay muted="muted" width="675" height="400" loop>
+        <video autoplay muted="muted" loop>
           <source src="videos/granular-vid.mp4" type="video/mp4">
         </video>
       </a>
@@ -58,7 +58,7 @@
 
     <section class="project">
       <a href="https://whydoidev.github.io/munch/" target="_blank">
-        <video autoplay muted="muted" width="675" height="400" loop>
+        <video autoplay muted="muted" loop>
           <source src="videos/munch-video.mp4" type="video/mp4">
         </video>
       </a>
@@ -72,7 +72,7 @@
 
     <section class="project">
       <a href="https://whydoidev.github.io/Last-Studio/" target="_blank">
-        <video autoplay muted="muted" width="675" height="400" loop>
+        <video autoplay muted="muted" loop>
           <source src="videos/last-studio.mp4" type="video/mp4">
         </video>
       </a>
@@ -87,7 +87,7 @@
 
       <a href="https://wellby-demo.myshopify.com/" target="_blank">
         <!-- <img class="margin-bottom" src="images/granular_1.png" alt="placeholder" /> -->
-        <video autoplay muted="muted" width="675" height="400" loop>
+        <video autoplay muted="muted" loop>
           <source src="videos/wellby-vid.mp4" type="video/mp4">
         </video>
       </a>
@@ -103,20 +103,16 @@
       </div>
 
     </section>
-    <section class="contact-form">
 
-      <form id="invisible-recaptcha-form">
-        ...
-        <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline">Submit</button>
-      </form>
+    <section>
 
-
+      <h4 class="mobile-text">Say Hi</h4>
       <form accept-charset="UTF-8" action="https://usebasin.com/f/8514033a8e44" enctype="multipart/form-data" method="POST">
-        <label for="email-address">Email Address</label>
+        <label for="email-address">Please enter your email</label>
         <input type="email" id="email" name="email" required>
 
-        <textarea rows="4" cols="50" name="comment" required>
-  </textarea>
+        <label for="message">Say hello!</label>
+        <textarea rows="4" cols="50" name="message" required></textarea>
 
         <input type="hidden" id="gotcha" name="_gotcha">
 
@@ -153,13 +149,6 @@
     </small>
   </footer>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-  <script>
-    function onSubmit(token) {
-      document.getElementById("invisible-recaptcha-form").submit();
-    }
-  </script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
