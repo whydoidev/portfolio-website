@@ -184,8 +184,12 @@ div.project-writeup {
 video {
   width: 100%;
   height: auto;
+  opacity: 0.8
 }
-
+video:hover {
+  outline-style: solid;
+  outline-color: orange;
+}
 /* ////////////////////////////////////////////////////////////////////// */
 /* CONTACT & PROJECT PAGES */
 /* Fixed nav styles */
@@ -205,10 +209,6 @@ video {
 .granular img {
   max-width: 100%;
   height: auto;
-}
-
-video {
-  opacity: 0.8;
 }
 
 /* Project page header style */
@@ -242,7 +242,7 @@ label {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  color: black;
+  color: #313639;
 }
 
 input[type="email"], input[type="text"], textarea {
@@ -251,8 +251,8 @@ input[type="email"], input[type="text"], textarea {
   border-radius: 4px;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  outline-color: orange;
+  font-size: 14px;
+  outline-color: #313639;
 }
 
 textarea {
